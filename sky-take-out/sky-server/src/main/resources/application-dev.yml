@@ -1,0 +1,44 @@
+sky:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    在这里配你自己的mysql配置
+    host: localhost
+    port: 3306
+    database: sky_take_out
+    username: root
+    password: 123456
+
+#    在这里配你自己的阿里云的oss的配置
+  alioss:
+    endpoint: oss-cn-beijing.aliyuncs.com
+    access-key-id:
+    access-key-secret:
+    bucket-name:
+
+#    在这里配你自己的redis的配置
+  redis:
+    host:
+    port:
+    password:
+    database:
+
+#    在这里配你自己的微信小程序相关的
+  wechat:
+#   小程序的appid
+    appid:
+#   小程序的密钥
+    secret:
+#   商户号
+    mchid:
+#   商户API证书的证书序列号
+    mchSerialNo:
+#   账户私钥文件（.pem结尾的文件的路径）
+    privateKeyFilePath:
+#   证书解密的密钥
+    apiV3Key:
+#   平台证书（.pem结尾的文件的路径）
+    weChatPayCertFilePath:
+#   支付成功的回调地址
+    notifyUrl: https://www.weixin.qq.com/wxpay/pay.php
+#   退款成功的回调地址
+    refundNotifyUrl: https://www.weixin.qq.com/wxpay/pay.ph
